@@ -1,4 +1,6 @@
-package Builders;
+package Project.Builders;
+
+import Project.House;
 
 public interface HouseBuilder {
 
@@ -12,7 +14,7 @@ public interface HouseBuilder {
 
     public void buildWindows();
 
-    public void buildGarage();
+
 
     public House getHouse();
 

@@ -1,14 +1,17 @@
-package Builders;
+package Project.Builders;
 
-public class StrawHouseBuilder implements HouseBuilder {
+import Project.Builders.HouseBuilder;
+import Project.House;
+
+public class GarbageHouseBuilder implements HouseBuilder {
     private House house;
-    public StrawHouseBuilder(){
+    public GarbageHouseBuilder(){
         house = new House();
     }
 
     @Override
     public void useMaterial() {
-        house.setMaterial("Straw");
+        house.setMaterial("Garbage");
     }
 
     @Override
@@ -17,23 +20,18 @@ public class StrawHouseBuilder implements HouseBuilder {
     }
 
     @Override
-    public void buildRoof() {
+    public void buildRoof() { house.setRoof("What roof?");
 
     }
 
     @Override
     public void buildDoors() {
-        house.setDoors(1);
+        house.setDoors(0);
     }
 
     @Override
     public void buildWindows() {
-        house.setWindows(0);
-    }
-
-    @Override
-    public void buildGarage() {
-
+        house.setWindows(1);
     }
 
     @Override

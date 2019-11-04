@@ -1,10 +1,11 @@
-package Builders;
+package Project;
 
 public class House implements HousePlan {
     private String material;
     private int numberOfWalls;
     private int numberOfDoors;
     private int numberOfWindows;
+    private String roofType;
 
 
     @Override
@@ -18,8 +19,8 @@ public class House implements HousePlan {
     }
 
     @Override
-    public void setRoof() {
-
+    public void setRoof(String roofType) {
+        this.roofType = roofType;
     }
 
     @Override
@@ -32,12 +33,23 @@ public class House implements HousePlan {
         this.numberOfWindows = numberOfWindows;
     }
 
-    @Override
-    public void setGarage() {
-
+    public String getMaterial() {
+        return material;
     }
 
-    public String getMaterial(){
-        return material;
+    public int getNumberOfWalls(){
+        return numberOfWalls;
+    }
+
+    public int getNumberOfDoors(){
+        return numberOfDoors;
+    }
+
+    public int getNumberOfWindows(){
+        return numberOfWindows;
+    }
+
+    public String getRoofType() {
+        return roofType;
     }
 }

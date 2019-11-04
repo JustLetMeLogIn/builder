@@ -1,4 +1,6 @@
-package Builders;
+package Project;
+
+import Project.Builders.HouseBuilder;
 
 public class Engineer  {
 
@@ -14,8 +16,8 @@ public class Engineer  {
     }
 
     public void buildHouse(){
+        houseBuilder.useMaterial();
         houseBuilder.buildDoors();
-        houseBuilder.buildGarage();
         houseBuilder.buildRoof();
         houseBuilder.buildWalls();
         houseBuilder.buildWindows();
