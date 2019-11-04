@@ -29,11 +29,10 @@ public class Main {
 
         checkHouse(thirdHouse);
 
-
-
     }
 
     public static void checkHouse(House house) {
+
         System.out.println("This house is made of " + house.getMaterial());
         System.out.println("It has a " + house.getRoofType() + " roof type.");
         System.out.println("There are " + house.getNumberOfDoors() + " doors.");

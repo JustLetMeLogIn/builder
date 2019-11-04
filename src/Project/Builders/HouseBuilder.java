@@ -15,7 +15,6 @@ public interface HouseBuilder {
     public void buildWindows();
 
 
-
     public House getHouse();
 
 }

@@ -1,10 +1,11 @@
 package Project.Builders;
 
-import Project.Builders.HouseBuilder;
 import Project.House;
 
 public class StrawHouseBuilder implements HouseBuilder {
+
     private House house;
+
     public StrawHouseBuilder(){
         house = new House();
     }
@@ -16,13 +17,11 @@ public class StrawHouseBuilder implements HouseBuilder {
 
     @Override
     public void buildWalls() {
-        house.setWalls(4);
+        house.setWalls(2);
     }
 
     @Override
-    public void buildRoof() { house.setRoof("Shitty roof");
-
-    }
+    public void buildRoof() { house.setRoof("Shitty roof"); }
 
     @Override
     public void buildDoors() {

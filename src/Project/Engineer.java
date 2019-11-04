@@ -4,7 +4,6 @@ import Project.Builders.HouseBuilder;
 
 public class Engineer  {
 
-
     private HouseBuilder houseBuilder;
 
     public Engineer(HouseBuilder houseBuilder){
@@ -16,11 +15,13 @@ public class Engineer  {
     }
 
     public void buildHouse(){
+
         houseBuilder.useMaterial();
         houseBuilder.buildDoors();
         houseBuilder.buildRoof();
         houseBuilder.buildWalls();
         houseBuilder.buildWindows();
+
     }
 
 }

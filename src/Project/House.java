@@ -1,12 +1,12 @@
 package Project;
 
 public class House implements HousePlan {
+
     private String material;
+    private String roofType;
     private int numberOfWalls;
     private int numberOfDoors;
     private int numberOfWindows;
-    private String roofType;
-
 
     @Override
     public void setMaterial(String material) {
@@ -52,4 +52,7 @@ public class House implements HousePlan {
     public String getRoofType() {
         return roofType;
     }
+
+
+
 }

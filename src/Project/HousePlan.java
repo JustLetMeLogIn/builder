@@ -1,6 +1,7 @@
 package Project;
 
 public interface HousePlan {
+
     public void setMaterial(String material);
 
     public void setWalls(int numberOfWalls);

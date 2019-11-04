@@ -1,10 +1,11 @@
 package Project.Builders;
 
-import Project.Builders.HouseBuilder;
 import Project.House;
 
 public class GarbageHouseBuilder implements HouseBuilder {
+
     private House house;
+
     public GarbageHouseBuilder(){
         house = new House();
     }
@@ -16,17 +17,15 @@ public class GarbageHouseBuilder implements HouseBuilder {
 
     @Override
     public void buildWalls() {
-        house.setWalls(4);
+        house.setWalls(1);
     }
 
     @Override
-    public void buildRoof() { house.setRoof("What roof?");
-
-    }
+    public void buildRoof() { house.setRoof("What roof?"); }
 
     @Override
     public void buildDoors() {
-        house.setDoors(0);
+        house.setDoors(1);
     }
 
     @Override
