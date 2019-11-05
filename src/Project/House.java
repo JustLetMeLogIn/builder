@@ -1,6 +1,6 @@
 package Project;
 
-public class House implements HousePlan {
+public class House{
 
     private String material;
     private String roofType;
@@ -8,27 +8,23 @@ public class House implements HousePlan {
     private int numberOfDoors;
     private int numberOfWindows;
 
-    @Override
+
     public void setMaterial(String material) {
         this.material = material;
     }
 
-    @Override
     public void setWalls(int numberOfWalls) {
         this.numberOfWalls = numberOfWalls;
     }
 
-    @Override
     public void setRoof(String roofType) {
         this.roofType = roofType;
     }
 
-    @Override
     public void setDoors(int numberOfDoors) {
         this.numberOfDoors = numberOfDoors;
     }
 
-    @Override
     public void setWindows(int numberOfWindows) {
         this.numberOfWindows = numberOfWindows;
     }
